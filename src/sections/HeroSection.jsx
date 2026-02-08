@@ -1,6 +1,7 @@
 
 import { motion } from 'framer-motion'
 import { ArrowRight, Sparkles } from 'lucide-react'
+import profile from '../../public/profilePic.jpeg'
 
 const textVariant = {
   hidden: { opacity: 0, y: 20 },
@@ -131,7 +132,7 @@ const HeroSection = ({ onCtaScroll }) => {
             <div className="absolute inset-0 rounded-3xl bg-linear-to-tr from-indigo-500/40 via-violet-500/40 to-cyan-400/40 opacity-70 blur-3xl" />
             <div className="relative mx-auto max-w-sm rounded-3xl border-2 border-indigo-500/50 overflow-hidden shadow-2xl shadow-indigo-500/30">
               <img
-                src="/src/Images/profilePic.jpeg"
+                src={profile}
                 alt="Zain Ul Hassan - Frontend Engineer"
                 className="w-full h-auto object-cover"
               />
