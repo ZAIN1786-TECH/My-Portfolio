@@ -9,6 +9,8 @@ import ExperienceSection from '../sections/ExperienceSection'
 import TestimonialsSection from '../sections/TestimonialsSection'
 import ContactSection from '../sections/ContactSection'
 import { applyTheme, getInitialTheme } from '../theme'
+import profile from '../../public/profilePic.jpeg'
+
 
 const navItems = [
   { id: 'hero', label: 'Home' },
@@ -66,7 +68,7 @@ const Layout = () => {
               className="flex items-center gap-2 text-lg font-semibold text-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400"
             >
               <img
-                src="/src/Images/profilePic.jpeg"
+                src={profile}
                 alt="Zain Ul Hassan"
                 className="h-10 w-10 rounded-full object-cover border-2 border-indigo-500"
               />
