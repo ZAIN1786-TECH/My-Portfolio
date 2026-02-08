@@ -1,19 +1,51 @@
 import { useState } from 'react'
+import emailjs from '@emailjs/browser'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const ContactSection = () => {
   const [status, setStatus] = useState('idle') // idle | sending | success
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault()
     if (status === 'sending') return
     setStatus('sending')
 
-    // Fake async to simulate sending
-    setTimeout(() => {
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+
+    if (!serviceId || !templateId || !publicKey) {
+      // eslint-disable-next-line no-console
+      console.error(
+        'EmailJS not configured. Update .env with:\n' +
+        'VITE_EMAILJS_SERVICE_ID = your service id\n' +
+        'VITE_EMAILJS_TEMPLATE_ID = your template id\n' +
+        'VITE_EMAILJS_PUBLIC_KEY = your public key\n' +
+        'See https://www.emailjs.com/'
+      )
+      alert('Email service not configured. Check browser console for setup instructions.')
+      setStatus('idle')
+      return
+    }
+
+    try {
+      const form = event.target
+      const formData = new FormData(form)
+      const payload = {
+        name: formData.get('name'),
+        email: formData.get('email'),
+        message: formData.get('message'),
+      }
+
+      await emailjs.send(serviceId, templateId, payload, publicKey)
       setStatus('success')
+      form.reset()
       setTimeout(() => setStatus('idle'), 3000)
-    }, 800)
+    } catch (err) {
+      // eslint-disable-next-line no-console
+      console.error('Failed to send contact message', err)
+      setStatus('idle')
+    }
   }
 
   return (
