@@ -1,26 +1,27 @@
+
 import { motion } from 'framer-motion'
 
 const experience = [
   {
-    company: 'Stealth B2B SaaS',
-    title: 'Senior Frontend Engineer (Freelance)',
-    period: '2023 — Present',
+    company: 'Enigmatix.io',
+    title: 'Frontend Developer',
+    period: '2022 — Present',
     summary:
-      'Led the redesign and implementation of the main analytics dashboard and billing flows for a usage-based SaaS platform.',
+      'Developing and maintaining multi-scale e-commerce platforms and service-based web applications. Specializing in React, Tailwind CSS, and Firebase integration.',
   },
   {
-    company: 'Hyperstack',
-    title: 'Product Engineer',
-    period: '2021 — 2023',
+    company: 'Freelance Projects',
+    title: 'Frontend Engineer',
+    period: '2021 — 2022',
     summary:
-      'Shipped features across marketing site, app shell, and internal tooling with a focus on performance and DX.',
+      'Worked with multiple clients on custom web projects, building responsive interfaces and implementing modern frontend practices.',
   },
   {
-    company: 'Early-stage clients',
-    title: 'Design & Frontend Partner',
-    period: '2019 — 2021',
+    company: 'Learning & Growth',
+    title: 'Web Development',
+    period: '2020 — 2021',
     summary:
-      'Partnered with founders to ship first production MVPs, from wireframes to deployed frontends.',
+      'Built foundational skills in HTML, CSS, JavaScript, and React through personal projects and learning initiatives.',
   },
 ]
 
@@ -38,7 +39,7 @@ const ExperienceSection = () => {
       </div>
 
       <div className="relative">
-        <div className="absolute left-3 top-0 h-full w-px bg-gradient-to-b from-indigo-500/60 via-slate-700 to-transparent sm:left-4" />
+        <div className="absolute left-3 top-0 h-full w-px bg-linear-to-b from-indigo-500/60 via-slate-700 to-transparent sm:left-4" />
 
         <div className="space-y-6">
           {experience.map((item, idx) => (

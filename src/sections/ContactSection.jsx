@@ -25,11 +25,11 @@ const ContactSection = () => {
         <div>
           <h2 className="text-lg font-semibold text-slate-50 sm:text-xl">Contact</h2>
           <p className="text-xs text-slate-400 sm:text-sm">
-            Share a bit about your product and I&apos;ll follow up within 24 hours.
+            Got a project in mind? Let&apos;s discuss your requirements and how I can help.
           </p>
         </div>
         <p className="text-[11px] text-emerald-300">
-          Currently accepting 1–2 new SaaS collaborations.
+          Open to freelance projects and collaboration opportunities.
         </p>
       </div>
 
@@ -88,7 +88,7 @@ const ContactSection = () => {
             <motion.button
               type="submit"
               disabled={status === 'sending'}
-              className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-indigo-500 via-violet-500 to-cyan-400 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-indigo-500/40 transition hover:shadow-xl hover:shadow-violet-500/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300 disabled:opacity-70"
+              className="inline-flex items-center gap-2 rounded-full bg-gradlient-to-r from-indigo-500 via-violet-500 to-cyan-400 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-indigo-500/40 transition hover:shadow-xl hover:shadow-violet-500/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300 disabled:opacity-70"
               whileTap={{ scale: 0.97 }}
             >
               {status === 'sending' ? 'Sending…' : 'Send message'}

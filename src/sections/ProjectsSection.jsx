@@ -4,35 +4,35 @@ import { ExternalLink, X, Github } from 'lucide-react'
 
 const projects = [
   {
-    id: 'billing-os',
-    name: 'BillingOS',
-    tagline: 'Usage-based billing dashboard for SaaS teams.',
+    id: 'ecommerce-platform',
+    name: 'E-Commerce Platform',
+    tagline: 'Multi-scale online shopping solution with product catalog and checkout.',
     description:
-      'A Stripe-inspired billing control centre with real-time metrics, customer health, and upgrade flows. Built to feel fast and trustworthy for finance and product teams.',
-    tech: ['React', 'TypeScript', 'Tailwind', 'Node.js'],
-    role: 'Product design, frontend architecture, design system',
+      'A fully functional e-commerce platform featuring product listings, shopping cart management, user authentication, and secure payment integration. Built with responsive design for optimal mobile and desktop experiences.',
+    tech: ['React', 'Tailwind CSS', 'Firebase', 'JavaScript'],
+    role: 'Frontend development, responsive design, payment integration',
     link: '#',
     github: '#',
   },
   {
-    id: 'launchpad',
-    name: 'Launchpad CRM',
-    tagline: 'Lightweight CRM for product-led B2B teams.',
+    id: 'service-website',
+    name: 'Service-Based Website',
+    tagline: 'Professional service provider website with booking system.',
     description:
-      'Pipeline views, activity timelines, and collaborative notes wrapped in a clean, low-noise interface tuned for focus and speed.',
-    tech: ['Next.js', 'React Query', 'PostgreSQL'],
-    role: 'Design system, frontend implementation',
+      'A comprehensive service platform with service listings, client reviews, booking management, and service provider dashboards. Designed for scalability and user-friendly navigation.',
+    tech: ['React', 'Tailwind CSS', 'Firebase', 'REST APIs'],
+    role: 'UI/UX implementation, frontend architecture',
     link: '#',
     github: '#',
   },
   {
-    id: 'pulse',
-    name: 'Pulse Analytics',
-    tagline: 'Real-time feature usage analytics for founders.',
+    id: 'corporate-website',
+    name: 'Corporate Website',
+    tagline: 'Modern, responsive business website with portfolio showcase.',
     description:
-      'Performance-focused analytics UI with multi-dimensional filters and live cohorts, optimised for dense information without visual overload.',
-    tech: ['React', 'D3', 'Tailwind', 'Vite'],
-    role: 'UX, data visualisation, frontend',
+      'Professional corporate website featuring company information, services showcase, team profiles, and contact forms. Optimized for performance and SEO best practices.',
+    tech: ['React', 'Tailwind CSS', 'JavaScript', 'CSS'],
+    role: 'Full frontend development, responsive design',
     link: '#',
     github: '#',
   },
@@ -50,7 +50,7 @@ const ProjectsSection = () => {
         <div>
           <h2 className="text-lg font-semibold text-slate-50 sm:text-xl">Projects</h2>
           <p className="text-xs text-slate-400 sm:text-sm">
-            Selected work from SaaS dashboards, analytics, and internal tools.
+            Selected projects showcasing e-commerce, service-based platforms, and web applications.
           </p>
         </div>
       </div>
@@ -59,7 +59,7 @@ const ProjectsSection = () => {
         {projects.map((project, idx) => (
           <motion.article
             key={project.id}
-            className="group relative flex cursor-pointer flex-col justify-between rounded-2xl border border-slate-800/80 bg-gradient-to-br from-slate-950/90 via-slate-950/60 to-slate-950/90 p-4 shadow-sm shadow-slate-900/80 transition hover:-translate-y-1 hover:border-indigo-400/60 hover:shadow-glow-indigo"
+            className="group relative flex cursor-pointer flex-col justify-between rounded-2xl border border-slate-800/80 bg-linear-to-br from-slate-950/90 via-slate-950/60 to-slate-950/90 p-4 shadow-sm shadow-slate-900/80 transition hover:-translate-y-1 hover:border-indigo-400/60 hover:shadow-glow-indigo"
             initial={{ opacity: 0, y: 16, scale: 0.98 }}
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             viewport={{ once: true, amount: 0.3 }}

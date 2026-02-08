@@ -4,24 +4,24 @@ import { Sparkles, LayoutDashboard, LineChart, ShieldCheck } from 'lucide-react'
 const services = [
   {
     icon: LayoutDashboard,
-    title: 'Product-grade dashboards',
+    title: 'E-commerce Development',
     description:
-      'Designing and building rich admin and customer portals that stay performant as your data grows.',
-    badge: 'B2B SaaS',
+      'Building scalable and feature-rich e-commerce platforms with intuitive product catalogs, shopping carts, and secure checkout flows.',
+    badge: 'Web Apps',
   },
   {
     icon: LineChart,
-    title: 'Conversion-focused flows',
+    title: 'Responsive Web Design',
     description:
-      'Onboarding, billing, and upgrade flows that reduce friction and increase activation.',
-    badge: 'Growth',
+      'Creating responsive, mobile-first websites that adapt seamlessly to all devices and provide excellent user experiences.',
+    badge: 'Design',
   },
   {
     icon: ShieldCheck,
-    title: 'Reliable UI systems',
+    title: 'Frontend Optimization',
     description:
-      'Component libraries, tokens, and motion guidelines that keep your product consistent at scale.',
-    badge: 'Design systems',
+      'Optimizing performance, implementing best practices, and ensuring clean, maintainable code for long-term scalability.',
+    badge: 'Performance',
   },
 ]
 
@@ -45,12 +45,12 @@ const ServicesSection = () => {
         <div>
           <h2 className="text-lg font-semibold text-slate-50 sm:text-xl">Services</h2>
           <p className="text-xs text-slate-400 sm:text-sm">
-            Everything you need to ship a calm, trustworthy SaaS product.
+            Comprehensive frontend solutions for modern web applications.
           </p>
         </div>
         <span className="inline-flex items-center gap-2 rounded-full border border-violet-500/40 bg-slate-900/60 px-3 py-1 text-[11px] text-violet-200">
           <Sparkles className="h-3 w-3" aria-hidden="true" />
-          Available for part-time and project-based work
+          Open to freelance & full-time opportunities
         </span>
       </div>
 
@@ -58,7 +58,7 @@ const ServicesSection = () => {
         {services.map(({ icon: Icon, title, description, badge }, idx) => (
           <motion.article
             key={title}
-            className="group relative rounded-2xl border border-slate-800/80 bg-gradient-to-br from-slate-950/90 via-slate-950/60 to-slate-950/90 p-4 shadow-sm shadow-slate-900/80 transition hover:-translate-y-1 hover:border-cyan-400/60 hover:shadow-glow-cyan"
+            className="group relative rounded-2xl border border-slate-800/80 bg-linear-to-br from-slate-950/90 via-slate-950/60 to-slate-950/90 p-4 shadow-sm shadow-slate-900/80 transition hover:-translate-y-1 hover:border-cyan-400/60 hover:shadow-glow-cyan"
             variants={cardVariants}
             initial="hidden"
             whileInView="visible"
