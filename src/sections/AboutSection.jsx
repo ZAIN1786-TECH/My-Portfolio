@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion'
 import { Code2, Cpu, Palette } from 'lucide-react'
 
 const container = {

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import {  AnimatePresence } from 'framer-motion'
 
 const ContactSection = () => {
   const [status, setStatus] = useState('idle') // idle | sending | success
@@ -88,7 +88,7 @@ const ContactSection = () => {
             <motion.button
               type="submit"
               disabled={status === 'sending'}
-              className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-indigo-500 via-violet-500 to-cyan-400 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-indigo-500/40 transition hover:shadow-xl hover:shadow-violet-500/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300 disabled:opacity-70"
+              className="inline-flex items-center gap-2 rounded-full bg-gradlient-to-r from-indigo-500 via-violet-500 to-cyan-400 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-indigo-500/40 transition hover:shadow-xl hover:shadow-violet-500/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300 disabled:opacity-70"
               whileTap={{ scale: 0.97 }}
             >
               {status === 'sending' ? 'Sending…' : 'Send message'}
