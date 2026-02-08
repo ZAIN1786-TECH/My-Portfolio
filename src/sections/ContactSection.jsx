@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import {  AnimatePresence } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 
 const ContactSection = () => {
   const [status, setStatus] = useState('idle') // idle | sending | success
@@ -25,11 +25,11 @@ const ContactSection = () => {
         <div>
           <h2 className="text-lg font-semibold text-slate-50 sm:text-xl">Contact</h2>
           <p className="text-xs text-slate-400 sm:text-sm">
-            Share a bit about your product and I&apos;ll follow up within 24 hours.
+            Got a project in mind? Let&apos;s discuss your requirements and how I can help.
           </p>
         </div>
         <p className="text-[11px] text-emerald-300">
-          Currently accepting 1–2 new SaaS collaborations.
+          Open to freelance projects and collaboration opportunities.
         </p>
       </div>
 

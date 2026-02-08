@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion,AnimatePresence } from 'framer-motion'
 import { Moon, SunMedium, Menu, X } from 'lucide-react'
 import HeroSection from '../sections/HeroSection'
 import AboutSection from '../sections/AboutSection'
@@ -65,10 +65,12 @@ const Layout = () => {
               onClick={() => handleNavClick('hero')}
               className="flex items-center gap-2 text-lg font-semibold text-slate-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400"
             >
-              <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-tr from-indigo-500 via-violet-500 to-cyan-400 text-xs font-bold shadow-lg shadow-indigo-500/40">
-                ZH
-              </span>
-              <span className="hidden sm:inline">Zain · SaaS Engineer</span>
+              <img
+                src="/src/Images/profilePic.jpeg"
+                alt="Zain Ul Hassan"
+                className="h-10 w-10 rounded-full object-cover border-2 border-indigo-500"
+              />
+              <span className="hidden sm:inline">Zain · Frontend Engineer</span>
             </button>
 
             <nav className="hidden items-center gap-6 text-sm font-medium text-slate-300 md:flex">
@@ -183,7 +185,7 @@ const Layout = () => {
             </p>
             <div className="flex items-center gap-4">
               <a
-                href="https://github.com/"
+                href="https://github.com/ZAIN1786-TECH"
                 target="_blank"
                 rel="noreferrer"
                 className="rounded-full px-3 py-1 text-xs font-medium text-slate-300 transition hover:text-cyan-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400"
@@ -191,7 +193,7 @@ const Layout = () => {
                 GitHub
               </a>
               <a
-                href="https://www.linkedin.com/"
+                href="https://www.linkedin.com/in/zain-ul-hassan-061589360?utm_source=share_via&utm_content=profile&utm_medium=member_android"
                 target="_blank"
                 rel="noreferrer"
                 className="rounded-full px-3 py-1 text-xs font-medium text-slate-300 transition hover:text-cyan-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400"
@@ -199,7 +201,7 @@ const Layout = () => {
                 LinkedIn
               </a>
               <span className="rounded-full bg-slate-900/90 px-3 py-1 text-[11px] font-medium text-slate-300 shadow-sm shadow-slate-900/70">
-                Available for SaaS collaborations
+                Freelance & Full-time Available
               </span>
             </div>
           </div>

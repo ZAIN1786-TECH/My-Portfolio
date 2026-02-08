@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import { Code2, Cpu, Palette } from 'lucide-react'
 
 const container = {
@@ -31,21 +32,13 @@ const AboutSection = () => {
       <div className="grid gap-8 md:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)]">
         <div className="space-y-4 text-sm text-slate-300">
           <p>
-            I&apos;m Zain, a frontend engineer and UI/UX designer focused on modern
-            SaaS dashboards, billing systems, and product-led onboarding. I bridge
-            product thinking, design systems, and high-performance React
-            implementations.
+            I&apos;m Zain Ul Hassan, a Frontend Engineer with 3+ years of experience building responsive and scalable web applications. I specialize in React, Tailwind CSS, and Firebase, creating intuitive user interfaces for e-commerce platforms and service-based websites.
           </p>
           <p>
-            I&apos;ve helped early-stage startups and growth-stage teams turn fuzzy
-            product ideas into shippable interfaces—prioritising performance,
-            accessibility, and a level of polish that feels &quot;production from
-            day one&quot;.
+            At Enigmatix.io, I&apos;ve worked on a variety of projects ranging from multi-scale e-commerce solutions to custom service-based web platforms. I focus on delivering clean, maintainable code and seamless user experiences across all devices.
           </p>
           <p>
-            My sweet spot: TypeScript, React, Tailwind, design tokens, and motion
-            systems that make complex workflows feel intuitive instead of
-            overwhelming.
+            My expertise lies in frontend architecture, responsive design, performance optimization, and translating design concepts into functional, pixel-perfect implementations using modern web technologies.
           </p>
         </div>
 
@@ -57,7 +50,7 @@ const AboutSection = () => {
             <p className="text-[11px] font-semibold uppercase tracking-wide text-slate-400">
               Frontend
             </p>
-            <p className="text-xs text-slate-200">React, TypeScript, Next.js</p>
+            <p className="text-xs text-slate-200">React, JavaScript, HTML, CSS</p>
           </div>
 
           <div className="flex flex-col gap-2 rounded-2xl border border-slate-800/80 bg-slate-950/90 p-3">
@@ -65,9 +58,9 @@ const AboutSection = () => {
               <Palette className="h-3.5 w-3.5" aria-hidden="true" />
             </div>
             <p className="text-[11px] font-semibold uppercase tracking-wide text-slate-400">
-              Design
+              Styling
             </p>
-            <p className="text-xs text-slate-200">Figma, design systems, UX flows</p>
+            <p className="text-xs text-slate-200">Tailwind CSS, Responsive Design</p>
           </div>
 
           <div className="flex flex-col gap-2 rounded-2xl border border-slate-800/80 bg-slate-950/90 p-3">
@@ -77,7 +70,7 @@ const AboutSection = () => {
             <p className="text-[11px] font-semibold uppercase tracking-wide text-slate-400">
               Backend
             </p>
-            <p className="text-xs text-slate-200">Node.js, Next API routes, MongoDB</p>
+            <p className="text-xs text-slate-200">Firebase, REST APIs</p>
           </div>
         </div>
       </div>
@@ -87,7 +80,7 @@ const AboutSection = () => {
           Stack
         </span>
         <div className="flex flex-wrap gap-2 text-[11px]">
-          {['React', 'Next.js', 'TypeScript', 'Node.js', 'Tailwind CSS', 'MongoDB'].map(
+          {['React', 'JavaScript', 'Tailwind CSS', 'Firebase', 'HTML', 'CSS'].map(
             (tech) => (
               <span
                 key={tech}

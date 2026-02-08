@@ -1,4 +1,4 @@
-import Layout from './components/Layout'
+import Layout from './Components/Layout'
 
 const App = () => {
   return (
@@ -6,4 +6,4 @@ const App = () => {
   )
 }
 
-export default App
+export default App  
