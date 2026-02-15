@@ -11,8 +11,8 @@ const projects = [
       'A fully functional e-commerce platform featuring product listings, shopping cart management, user authentication, and secure payment integration. Built with responsive design for optimal mobile and desktop experiences.',
     tech: ['React', 'Tailwind CSS', 'Firebase', 'JavaScript'],
     role: 'Frontend development, responsive design, payment integration',
-    link: '#',
-    github: '#',
+    link: 'https://zeeswear.netlify.app',
+    github: 'https://github.com/ZAIN1786-TECH/Zees-Wear',
   },
   {
     id: 'service-website',
