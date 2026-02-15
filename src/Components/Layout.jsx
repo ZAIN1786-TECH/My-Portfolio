@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { motion,AnimatePresence } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import { Moon, SunMedium, Menu, X } from 'lucide-react'
 import HeroSection from '../sections/HeroSection'
 import AboutSection from '../sections/AboutSection'
